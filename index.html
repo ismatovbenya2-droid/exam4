@@ -1,11 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ГМЦ - Городской медицинский центр</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#2BA3B0',
+                        'primary-dark': '#1B8A96',
+                        'dark-blue': '#1E3A5F',
+                        'light-bg': '#EFF4F8',
+                        'card-border': '#D1DEE8',
+                        'nav-text': '#2D3748',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-white">
+
+    <!-- Top Header Bar - Desktop -->
+    <header class="hidden lg:block border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <img src="./src/imgbenj/1.svg" alt="ГМЦ Logo" class="h-12 w-auto">
+                </div>
+
+                <!-- Phone -->
+                <div class="flex flex-col">
+                    <a href="tel:84959260603" class="text-dark-blue font-bold text-lg">8 (495) 926-06-03</a>
+                    <div class="flex items-center space-x-1 text-sm text-gray-600">
+<img src="./src/imgbenj/2.png" alt="">                     
+   <span>Whatsapp</span>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex flex-col">
+                    <a href="mailto:info@gormedcentre.ru" class="text-dark-blue text-sm">info@gormedcentre.ru</a>
+                    <a href="#" class="text-primary text-sm underline">Заказать звонок</a>
+                </div>
+
+                <!-- Address -->
+                <div class="flex flex-col text-sm text-gray-700">
+                    <span>г. Мытищи,</span>
+                    <span>ул.Рождественская, д.7</span>
+                </div>
+
+                <!-- Schedule -->
+                <div class="flex flex-col text-sm text-gray-700">
+                    <span>Ежедневно</span>
+                    <span>с 9.00 до 21.00</span>
+                </div>
+
+                <!-- Search & Cabinet -->
+                <div class="flex items-center space-x-3">
+                    <button class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white hover:bg-primary-dark transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                    <button class="px-5 py-2 border-2 border-primary text-primary rounded-lg font-medium hover:bg-primary hover:text-white transition">
+                        Личный кабинет
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar - Desktop -->
+    <nav class="hidden lg:block border-b border-gray-200 bg-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-6">
+                    <div class="relative group">
+                        <button class="flex items-center space-x-1 text-nav-text font-medium hover:text-primary transition">
+                            <span>Page 1</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                    </div>
+                    <a href="#" class="text-nav-text font-medium hover:text-primary transition">Page 2</a>
+                    <a href="#" class="text-nav-text font-medium hover:text-primary transition">Page 3</a>
+                    <a href="#" class="text-nav-text font-medium hover:text-primary transition">Page 4</a>
+                    <a href="#" class="text-nav-text font-medium hover:text-primary transition">Page 5</a>
+                    <div class="relative group">
+                        <button class="flex items-center space-x-1 text-nav-text font-medium hover:text-primary transition">
+                            <span>О центре</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                    </div>
+                    <a href="#" class="text-nav-text font-medium hover:text-primary transition">Детство</a>
+                    <a href="#" class="text-nav-text font-medium hover:text-primary transition">Контакты</a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button class="flex items-center space-x-2 text-nav-text text-sm hover:text-primary transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        <span>Версия для слабовидящих</span>
+                    </button>
+                    <button class="px-6 py-2.5 bg-dark-blue text-white rounded-lg font-medium hover:bg-opacity-90 transition">
+                        Запись на приём
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Header -->
+    <header class="lg:hidden sticky top-0 z-50 bg-white border-b border-gray-200">
+        <div class="flex items-center justify-between px-4 py-3">
+            <div class="flex items-center space-x-2">
+                <img src="./src/imgbenj/1.svg" alt="ГМЦ Logo" class="h-10 w-auto">
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="text-dark-blue">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </button>
+                <button id="mobile-menu-btn" class="text-dark-blue">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-white border-t border-gray-200 px-4 py-4 space-y-3">
+            <a href="#" class="block text-nav-text font-medium py-2">Page 1</a>
+            <a href="#" class="block text-nav-text font-medium py-2">Page 2</a>
+            <a href="#" class="block text-nav-text font-medium py-2">Page 3</a>
+            <a href="#" class="block text-nav-text font-medium py-2">Page 4</a>
+            <a href="#" class="block text-nav-text font-medium py-2">Page 5</a>
+            <a href="#" class="block text-nav-text font-medium py-2">О центре</a>
+            <a href="#" class="block text-nav-text font-medium py-2">Детство</a>
+            <a href="#" class="block text-nav-text font-medium py-2">Контакты</a>
+            <div class="pt-3 border-t border-gray-200 space-y-3">
+                <a href="tel:84959260603" class="block text-dark-blue font-bold text-lg">8 (495) 926-06-03</a>
+                <p class="text-sm text-gray-600">г. Мытищи, ул.Рождественская, д.7</p>
+                <p class="text-sm text-gray-600">Ежедневно с 9.00 до 21.00</p>
+                <button class="w-full py-3 bg-dark-blue text-white rounded-lg font-medium">Запись на приём</button>
+                <button class="w-full py-3 border-2 border-primary text-primary rounded-lg font-medium">Личный кабинет</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with 2 Background Images -->
+    <section class="relative overflow-hidden bg-cover bg-center" style="background-image: url('./src/imgbenj/5.png');">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center lg:items-end min-h-[400px] lg:min-h-[500px]">
+                <!-- Text Content -->
+                <div class="flex-1 py-10 lg:py-16 z-10 relative">
+                    <h1 class="text-3xl lg:text-5xl font-bold text-white leading-tight mb-4 lg:mb-6">
+                        Позаботьтесь<br>
+                        о своём здоровье
+                    </h1>
+                    <p class="text-white text-sm lg:text-base opacity-90 max-w-md mb-6 lg:mb-10 leading-relaxed">
+                        Осуществляем комплексное медицинское обслуживание населения: консультации и амбулаторное лечение у специалистов всех направлений, медицинские обследования и диагностические процедуры.
+                    </p>
+                    <button class="px-8 py-3 bg-white bg-opacity-20 border-2 border-white text-white rounded-lg font-medium hover:bg-opacity-30 transition text-sm lg:text-base">
+                        Записаться
+                    </button>
+                </div>
+
+                              <!-- Doctor Image with Shape Behind -->
+                <div class="flex-shrink-0 lg:flex-1 flex justify-center lg:justify-end items-end relative">
+                    <!-- Teal Shape (behind doctor) -->
+                    <img src="./src/imgbenj/4.png" alt="" class="absolute bottom-0 right-0 h-72 sm:h-96 lg:h-[500px] w-auto z-0">
+                    <!-- Doctor (in front) -->
+                    <img src="./src/imgbenj/3.png" alt="Doctor" class="h-64 sm:h-80 lg:h-[450px] object-contain object-bottom relative z-10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Cards Section -->
+    <section class="bg-light-bg p-8 lg:p-[-5]">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+
+                <!-- Card 1 - Направления -->
+                <div class="bg-white rounded-xl border border-card-border p-6 flex flex-col">
+                    <h3 class="text-dark-blue font-bold text-xl mb-1">Направления</h3>
+                    <hr class="border-primary border-t-2 w-12 mb-6">
+
+                    <ul class="space-y-4 flex-1 mb-6">
+                        <li class="text-gray-700 text-sm lg:text-base">Акушерство</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Косметология</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Хирургия</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Мануальная терапия</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Психотерапия</li>
+                    </ul>
+
+                    <button class="w-full py-3 bg-dark-blue text-white rounded-lg font-medium hover:bg-opacity-90 transition text-sm">
+                        Все услуги
+                    </button>
+                </div>
+
+                <!-- Card 2 - Диагностика -->
+                <div class="bg-white rounded-xl border border-card-border p-6 flex flex-col">
+                    <h3 class="text-dark-blue font-bold text-xl mb-1">Диагностика</h3>
+                    <hr class="border-primary border-t-2 w-12 mb-6">
+
+                    <ul class="space-y-4 flex-1 mb-6">
+                        <li class="text-gray-700 text-sm lg:text-base">МРТ</li>
+                        <li class="text-gray-700 text-sm lg:text-base">КТ</li>
+                        <li class="text-gray-700 text-sm lg:text-base">УЗИ</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Рентген</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Гастроскопия</li>
+                    </ul>
+
+                    <button class="w-full py-3 bg-dark-blue text-white rounded-lg font-medium hover:bg-opacity-90 transition text-sm">
+                        Вся диагностика
+                    </button>
+                </div>
+
+                <!-- Card 3 - Врачи -->
+                <div class="bg-white rounded-xl border border-card-border p-6 flex flex-col">
+                    <h3 class="text-dark-blue font-bold text-xl mb-1">Врачи</h3>
+                    <hr class="border-primary border-t-2 w-12 mb-6">
+
+                    <ul class="space-y-4 flex-1 mb-6">
+                        <li class="text-gray-700 text-sm lg:text-base">Стоматолог</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Эндокринолог</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Хирург</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Терапевт</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Невролог</li>
+                    </ul>
+
+                    <button class="w-full py-3 bg-dark-blue text-white rounded-lg font-medium hover:bg-opacity-90 transition text-sm">
+                        Все врачи
+                    </button>
+                </div>
+
+                <!-- Card 4 - Детство -->
+                <div class="bg-white rounded-xl border border-card-border p-6 flex flex-col">
+                    <h3 class="text-dark-blue font-bold text-xl mb-1">Детство</h3>
+                    <hr class="border-primary border-t-2 w-12 mb-6">
+
+                    <ul class="space-y-4 flex-1 mb-6">
+                        <li class="text-gray-700 text-sm lg:text-base">Педиатр</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Стоматолог</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Дерматолог</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Офтальмолог</li>
+                        <li class="text-gray-700 text-sm lg:text-base">Логопед</li>
+                    </ul>
+
+                    <button class="w-full py-3 bg-dark-blue text-white rounded-lg font-medium hover:bg-opacity-90 transition text-sm">
+                        Все врачи
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
 </body>
 </html>
