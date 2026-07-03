@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <header class="w-full bg-[#fcfcfc] font-sans antialiased shadow-sm select-none">
+  
+  <div class="hidden lg:block w-full">
+    <div class="max-w-[1440px] mx-auto px-4 py-4 flex items-center justify-between gap-4 text-sm text-[#555555]">
+      
+      <div class="flex items-center">
+        <img src="./images_abdullo/logo.svg" alt="" class="h-16 w-auto object-contain" />
+      </div>
+
+      <div class="flex flex-col items-start">
+        <a href="tel:84959260603" class="text-xl font-bold text-[#006699] hover:text-[#004466] transition-colors">8 (495) 926-06-03</a>
+        <div class="flex items-center gap-1.5 mt-0.5 text-xs text-[#444444]">
+          <img src="./images_abdullo/social.png" alt="" class="w-4 h-4" />
+          <span>Whatsapp</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-start">
+        <span class="text-xs text-[#777777]">info@gomedcentre.ru</span>
+        <a href="#" class="text-sm border-b border-dashed border-[#555555] text-[#555555] hover:text-[#006699] hover:border-[#006699] transition-colors mt-0.5">Заказать звонок</a>
+      </div>
+
+      <div class="max-w-[180px] text-xs text-[#666666] leading-relaxed">
+        г. Мытищи, ул. Рождественская, д.7
+      </div>
+
+      <div class="text-xs text-[#666666] leading-relaxed">
+        Ежедневно<br />с 9.00 до 21.00
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button class="w-10 h-10 flex items-center justify-center bg-[#00c5c3] hover:bg-[#00a3a1] text-white rounded transition-colors">
+          <img src="./images_abdullo/zoom-search.png" alt="" class="w-5 h-5" />
+        </button>
+        <a href="#" class="h-10 px-5 flex items-center justify-center bg-[#eef5fa] hover:bg-[#deebf5] text-[#004b73] font-medium rounded transition-colors text-sm">
+          Личный кабинет
+        </a>
+      </div>
+
+    </div>
+
+    <div class="w-full bg-white border-t border-b border-gray-100 mt-2">
+      <div class="max-w-[1440px] mx-auto px-4 flex items-center justify-between py-1.5">
+        <nav class="flex items-center gap-6 font-semibold text-[#111111]">
+          <div class="relative group">
+            <button class="flex items-center gap-1 hover:text-[#006699] py-2 transition-colors">
+              <a href="">Page 1</a>
+              <img src="./images_abdullo/Polygon 1.png" alt="" class="w-2.5 h-1.5 mt-0.5" />
+            </button>
+          </div>
+          <a href="#" class="hover:text-[#006699] py-2 transition-colors">Page 2</a>
+          <a href="#" class="hover:text-[#006699] py-2 transition-colors">Page 3</a>
+          <a href="#" class="hover:text-[#006699] py-2 transition-colors">Page 4</a>
+          <a href="#" class="hover:text-[#006699] py-2 transition-colors">Акции</a>
+          <div class="relative group">
+            <button class="flex items-center gap-1 hover:text-[#006699] py-2 transition-colors">
+              <a href="#">О центре</a>
+              <img src="./images_abdullo/Polygon 1.png" alt="" class="w-2.5 h-1.5 mt-0.5" />
+            </button>
+          </div>
+          <a href="#" class="hover:text-[#006699] py-2 transition-colors">Детство</a>
+          <a href="#" class="hover:text-[#006699] py-2 transition-colors">Контакты</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <button class="flex items-center gap-2 text-xs text-[#555555] hover:text-[#006699] transition-colors">
+            <img src="./images_abdullo/icon.png" alt="" class="w-6 h-auto" />
+            <span>Версия для слабовидящих</span>
+          </button>
+          <a href="#" class="h-11 px-6 flex items-center justify-center bg-[#005a8c] hover:bg-[#00466d] text-white font-semibold rounded text-sm tracking-wide transition-colors shadow-sm">
+            Запись на приём
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block lg:hidden w-full px-4 py-3 bg-white border-b border-gray-100">
+    <div class="flex items-center justify-between">
+      
+      <div class="flex items-center">
+        <img src="./images_abdullo/logo.svg" alt="" class="h-12 w-auto object-contain" />
+      </div>
+
+      <div class="flex items-center gap-5">
+        <a href="class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 active:bg-gray-100 transition-colors">
+          <img src="./images_abdullo/call.png" alt="" class="w-5 h-5 text-[#444444]" />
+        </a>
+        
+        <button class="flex items-center gap-2 text-[#444444] active:text-black transition-colors focus:outline-none">
+          <span class="text-base font-medium text-[#7a869a]">Меню</span>
+          <img src="./images_abdullo/image.png" alt="" class="w-7 h-auto" />
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<section class="w-full bg-[#f4f7f9] font-sans antialiased overflow-hidden select-none">
+  
+  <div class="hidden lg:flex max-w-[1440px] mx-auto min-h-[500px] relative items-center justify-between pl-16">
+    
+    <div class="w-1/2 flex flex-col items-start py-12 z-10">
+      <nav class="flex items-center gap-2 text-xs text-[#777777] mb-10">
+        <a href="#" class="underline hover:text-[#006699] transition-colors">Главная</a>
+        <span>/</span>
+        <a href="#" class="underline hover:text-[#006699] transition-colors">Направления</a>
+        <span>/</span>
+        <a href="#" class="underline hover:text-[#006699] transition-colors">Косметология</a>
+        <span>/</span>
+        <span class="text-[#999999]">Контурная пластика</span>
+      </nav>
+
+      <span class="text-[#006699] font-bold text-base tracking-wide mb-4">Косметология</span>
+      
+      <h1 class="text-[#1a1a1a] text-5xl font-bold tracking-tight mb-6">
+        Контурная пластика
+      </h1>
+      
+      <div class="text-[#1a1a1a] text-4xl font-bold mb-8">
+        от 1 500 ₽
+      </div>
+
+      <a href="#" class="h-12 px-10 flex items-center justify-center bg-[#00c5c3] hover:bg-[#00a3a1] text-white font-semibold rounded text-base transition-colors shadow-sm">
+        Записаться
+      </a>
+    </div>
+
+    <div class="w-1/2 h-[500px] relative overflow-hidden rounded-l-[250px]">
+      <img src="./images_abdullo/Mask group.png" alt="" class="w-full h-full object-cover object-center" />
+    </div>
+
+  </div>
+
+  <div class="block lg:hidden w-full pt-6 flex flex-col items-center">
+    
+    <nav class="flex items-center justify-center gap-2 text-sm text-[#777777] px-4 mb-8 text-center flex-wrap">
+      <a href="#" class="underline">Главная</a>
+      <span>/</span>
+      <a href="#" class="underline">Направления</a>
+      <span>/</span>
+      <a href="#" class="underline">Косметология</a>
+    </nav>
+
+    <div class="flex flex-col items-center text-center px-6 w-full z-10">
+      <span class="text-[#006699] font-bold text-lg tracking-wide mb-4">Косметология</span>
+      
+      <h1 class="text-[#1a1a1a] text-3xl font-bold leading-tight mb-5 max-w-[280px]">
+        Контурная пластика
+      </h1>
+      
+      <div class="text-[#1a1a1a] text-4xl font-bold mb-6">
+        от 1 500 ₽
+      </div>
+
+      <a href="#" class="w-full max-w-[280px] h-12 flex items-center justify-center bg-[#00c5c3] active:bg-[#00a3a1] text-white font-semibold rounded text-base transition-colors mb-10">
+        Записаться
+      </a>
+    </div>
+
+    <div class="w-full h-[380px] overflow-hidden rounded-t-[140px] mt-2">
+      <img src="./images_abdullo/Mask group.png" alt="" class="w-full h-full object-cover object-center" />
+    </div>
+
+  </div>
+
+</section>
+
+<div class="w-full max-w-[1440px] mx-auto px-4 py-8 font-sans antialiased select-none">
+  
+  <div class="w-full bg-[#295c8f] rounded-t-lg flex items-center p-1.5 overflow-x-auto scrollbar-none">
+    <div class="flex items-center w-full sm:w-auto min-w-max">
+      <button class="bg-[#2a6da8] text-white px-8 py-3 rounded text-base font-medium transition-colors focus:outline-none">
+        Об услуге
+      </button>
+      <div class="h-6 w-[1px] bg-[#427bb3] mx-1"></div>
+      <button class="text-[#e2ecf5] hover:text-white px-8 py-3 text-base font-medium transition-colors focus:outline-none">
+        Врачи
+      </button>
+      <div class="h-6 w-[1px] bg-[#427bb3] mx-1"></div>
+      <button class="text-[#e2ecf5] hover:text-white px-8 py-3 text-base font-medium transition-colors focus:outline-none">
+        Отзывы
+      </button>
+    </div>
+  </div>
+
+  <div class="w-full bg-[#f4f7f9] rounded-b-lg p-6 sm:p-12">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
+      
+      <div class="flex flex-col items-start text-left">
+        <img src="./images_abdullo/cross.png" alt="" class="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-4" />
+        <span class="text-[#2b72b4] text-2xl sm:text-3xl font-bold mb-2">&gt;10</span>
+        <p class="text-[#444444] text-xs sm:text-sm leading-relaxed max-w-[200px]">
+          лет заботы о вашем здоровье
+        </p>
+      </div>
+
+      <div class="flex flex-col items-start text-left">
+        <img src="./images_abdullo/cross.png" alt="" class="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-4" />
+        <span class="text-[#2b72b4] text-2xl sm:text-3xl font-bold mb-2">150</span>
+        <p class="text-[#444444] text-xs sm:text-sm leading-relaxed max-w-[200px]">прием врача любой специальности в день обращения
+        </p>
+      </div>
+       <div class="flex flex-col items-start text-left">
+        <img src="./images_abdullo/cross.png" alt="" class="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-4" />
+        <span class="text-[#2b72b4] text-2xl sm:text-3xl font-bold mb-2">300</span>
+        <p class="text-[#444444] text-xs sm:text-sm leading-relaxed max-w-[200px]">
+медицинских услуг по всем направлениям        </p>
+      </div>
+       <div class="flex flex-col items-start text-left">
+        <img src="./images_abdullo/cross.png" alt="" class="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-4" />
+        <span class="text-[#2b72b4] text-2xl sm:text-3xl font-bold mb-2">День в день</span>
+        <p class="text-[#444444] text-xs sm:text-sm leading-relaxed max-w-[200px]">
+прием врача любой специальности в день обращения        </p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="w-full bg-[#f4f7f9] py-10 px-4 font-sans antialiased select-none">
+  <div class="max-w-[1400px] mx-auto bg-white rounded-2xl p-6 sm:p-12 shadow-sm">
+    
+    <h2 class="text-[#1a1a1a] text-xl sm:text-2xl lg:text-3xl font-bold mb-6 leading-snug">
+      Все, что вы должны знать о косметологии: секреты красоты и здоровья
+    </h2>
+
+    <p class="text-[#444444] text-sm sm:text-base leading-relaxed mb-8">
+      Косметология – это наука и искусство, которое изучает и улучшает красоту и здоровье кожи, волос и ногтей. Современная косметология предлагает широкий спектр процедур и продуктов, которые помогают нам выглядеть и чувствовать себя лучше. В этой статье мы погрузимся в мир косметологии и рассмотрим основные аспекты этой науки.
+    </p>
+
+    <h3 class="text-[#005a8c] text-base sm:text-lg font-bold mb-4">
+      1. Роль косметолога в поддержании красоты и здоровья
+    </h3>
+
+    <p class="text-[#444444] text-sm sm:text-base leading-relaxed mb-6">
+      Косметолог – это специалист, который помогает нам достичь желаемого внешнего вида и поддерживать здоровье нашей кожи и волос. Он или она проводит диагностику, консультирует по уходу за кожей и рекомендует процедуры и продукты, которые помогут решить определенные проблемы.
+    </p>
+
+    <div class="w-full h-[1px] bg-gray-200 my-6"></div>
+
+    <p class="text-[#555555] italic text-sm sm:text-base leading-relaxed my-6">
+      Пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой. Пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой. Пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой пример текста с цитатой.
+    </p>
+
+    <div class="w-full h-[1px] bg-gray-200 my-6"></div>
+
+    <div class="space-y-4 mt-8">
+      
+      <div class="w-full bg-[#eef5fa] rounded-xl p-5 transition-all">
+        <button class="w-full flex items-center justify-between text-left font-semibold text-[#1a1a1a] text-sm sm:text-base focus:outline-none">
+          <span>Пример реализации аккордеона для сео текста</span>
+            <span>+</span>
+        </button>
+      </div>
+
+      <div class="w-full bg-[#eef5fa] rounded-xl p-5 transition-all">
+        <button class="w-full flex items-center justify-between text-left font-semibold text-[#1a1a1a] text-sm sm:text-base focus:outline-none">
+          <span>Пример реализации аккордеона для сео текста</span>
+          <span>-</span>
+        </button>
+        <div class="mt-4 pt-4 border-t border-gray-200/60 text-[#444444] text-sm sm:text-base leading-relaxed">
+          Выбор правильных косметических продуктов является ключевым аспектом косметологии. Необходимо учитывать тип кожи, его особенности и проблемы, которые требуют решения. Косметолог может помочь вам определиться с выбором наиболее подходящих продуктов, которые удовлетворят вашим потребностям.
+        </div>
+      </div>
+
+      <div class="w-full bg-[#eef5fa] rounded-xl p-5 transition-all">
+        <button class="w-full flex items-center justify-between text-left font-semibold text-[#1a1a1a] text-sm sm:text-base focus:outline-none">
+          <span>Пример реализации аккордеона для сео текста</span>
+          <span>+</span>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<section class="w-full max-w-[1440px] mx-auto px-4 py-12 font-sans antialiased select-none">
+  
+  <div class="flex items-center justify-between mb-8">
+    <h2 class="text-[#1a1a1a] text-3xl sm:text-4xl font-bold tracking-tight">Врачи</h2>
+    <div class="flex items-center gap-2">
+      <button class="w-10 h-10 rounded-full bg-[#eef5fa] hover:bg-[#deebf5] flex items-center justify-center transition-colors focus:outline-none">
+        <img src="./images_abdullo/svg.png" alt="" class="w-4 h-4 object-contain" />
+      </button>
+      <button class="w-10 h-10 rounded-full bg-[#0070ba] hover:bg-[#005a96] flex items-center justify-center transition-colors focus:outline-none">
+        <img src="./images_abdullo/svg (1).png" alt="" class="w-4 h-4 object-contain" />
+      </button>
+    </div>
+  </div>
+
+  <div class="w-full overflow-x-auto pb-4 scrollbar-none snap-x snap-mandatory flex lg:grid lg:grid-cols-4 gap-6">
+    
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col bg-white rounded-lg">
+      <div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-gray-100">
+        <img src="./images_abdullo/photo.png" alt="" class="w-full h-full object-cover object-top" />
+      </div>
+      <div class="flex flex-col flex-grow pt-4">
+        <h3 class="text-[#0070ba] text-lg font-bold hover:underline cursor-pointer mb-1">
+          Крятов Андрей
+        </h3>
+        <p class="text-[#666666] text-sm mb-5 min-h-[40px]">
+          Главный врач, уролог, андролог
+        </p>
+        <button class="w-full h-11 bg-[#005a8c] hover:bg-[#00466d] text-white font-semibold text-sm rounded transition-colors mt-auto">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col bg-white rounded-lg">
+      <div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-gray-100">
+        <img src="./images_abdullo/photo (1).png" alt="" class="w-full h-full object-cover object-top" />
+      </div>
+      <div class="flex flex-col flex-grow pt-4">
+        <h3 class="text-[#0070ba] text-lg font-bold hover:underline cursor-pointer mb-1">
+          Савина Наталья
+        </h3>
+        <p class="text-[#666666] text-sm mb-5 min-h-[40px]">
+          Врач-невролог
+        </p>
+        <button class="w-full h-11 bg-[#005a8c] hover:bg-[#00466d] text-white font-semibold text-sm rounded transition-colors mt-auto">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col bg-white rounded-lg">
+      <div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-gray-100">
+        <img src="./images_abdullo/photo (2).png" alt="" class="w-full h-full object-cover object-top" />
+      </div>
+      <div class="flex flex-col flex-grow pt-4">
+        <h3 class="text-[#0070ba] text-lg font-bold hover:underline cursor-pointer mb-1">
+          Зотова Гюзяль
+        </h3>
+        <p class="text-[#666666] text-sm mb-5 min-h-[40px]">
+          Врач-терапевт
+        </p>
+        <button class="w-full h-11 bg-[#005a8c] hover:bg-[#00466d] text-white font-semibold text-sm rounded transition-colors mt-auto">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col bg-white rounded-lg">
+      <div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-gray-100">
+        <img src="./images_abdullo/photo (3).png" alt="" class="w-full h-full object-cover object-top" />
+      </div>
+      <div class="flex flex-col flex-grow pt-4">
+        <h3 class="text-[#0070ba] text-lg font-bold hover:underline cursor-pointer mb-1">
+          Николаева Оксана
+        </h3>
+        <p class="text-[#666666] text-sm mb-5 min-h-[40px]">
+          Врач-терапевт
+        </p>
+        <button class="w-full h-11 bg-[#005a8c] hover:bg-[#00466d] text-white font-semibold text-sm rounded transition-colors mt-auto">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="w-full max-w-[1440px] mx-auto px-4 py-12 font-sans antialiased select-none">
+  
+  <div class="flex items-center justify-between mb-10">
+    <h2 class="text-[#1a1a1a] text-3xl sm:text-4xl font-bold tracking-tight">Отзывы пациентов</h2>
+    <div class="flex items-center gap-2">
+      <button class="w-10 h-10 rounded-full bg-[#eef5fa] hover:bg-[#deebf5] flex items-center justify-center transition-colors focus:outline-none">
+        <img src="./images_abdullo/svg.png" alt="" class="w-4 h-4 object-contain" />
+      </button>
+      <button class="w-10 h-10 rounded-full bg-[#0070ba] hover:bg-[#005a96] flex items-center justify-center transition-colors focus:outline-none">
+        <img src="./images_abdullo/svg (1).png" alt="" class="w-4 h-4 object-contain" />
+      </button>
+    </div>
+  </div>
+
+  <div class="w-full overflow-x-auto pb-6 scrollbar-none snap-x snap-mandatory flex lg:grid lg:grid-cols-2 gap-8">
+    
+    <div class="min-w-[300px] sm:min-w-[450px] lg:min-w-0 snap-start flex flex-col justify-between bg-white">
+      <div>
+        <div class="flex flex-col mb-4">
+          <span class="text-[#1a1a1a] font-bold text-base">Балушина Татьяна</span>
+          <span class="text-[#999999] text-xs mt-1">18 апреля 2022</span>
+        </div>
+
+        <div class="flex items-center gap-1 mb-5">
+          <img src="./images_abdullo/Stars.png" alt="" class="w-22 h-4 object-contain" />
+        </div>
+
+        <p class="text-[#333333] text-sm sm:text-base leading-relaxed mb-6">
+          Попала к Татьяне Ивановне спонтанно. Очень довольна приёмом и проведением ультразвуковой диагностики. Спасибо Наталье Ивановне за внимательное отношение к пациентам! При возникновении проблем теперь только к ней!
+        </p>
+      </div>
+
+      <div class="flex flex-col items-start gap-5">
+        <a href="#" class="h-11 px-8 flex items-center justify-center border border-[#0070ba] text-[#0070ba] hover:bg-[#0070ba] hover:text-white font-medium text-sm rounded transition-all">
+          Подробнее
+        </a>
+        <div class="text-sm text-[#1a1a1a]">
+          Врач: <a href="#" class="text-[#0070ba] hover:underline font-medium">Савина Наталья Владимировна</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="min-w-[300px] sm:min-w-[450px] lg:min-w-0 snap-start flex flex-col justify-between bg-white">
+      <div>
+        <div class="flex flex-col mb-4">
+          <span class="text-[#1a1a1a] font-bold text-base">Трофимов Иван</span>
+          <span class="text-[#999999] text-xs mt-1">24 ноября 2021</span>
+        </div>
+
+        <div class="flex items-center gap-1 mb-5">
+          <img src="./images_abdullo/Stars.png" alt="" class="w-22 h-4 object-contain" />
+        </div>
+
+        <p class="text-[#333333] text-sm sm:text-base leading-relaxed mb-6">
+          Огромное спасибо врачу за тщательное обследование. Выявили нехватку витамина Д, проблем с щитовидной, к счастью, не оказалось. Доктор приятная в общении и настоящий профессионал!
+        </p>
+      </div>
+
+      <div class="flex flex-col items-start gap-5">
+        <a href="#" class="h-11 px-8 flex items-center justify-center border border-[#0070ba] text-[#0070ba] hover:bg-[#0070ba] hover:text-white font-medium text-sm rounded transition-all">
+          Подробнее
+        </a>
+        <div class="text-sm text-[#1a1a1a]">
+          Врач: <a href="#" class="text-[#0070ba] hover:underline font-medium">Крятов Андрей Михайлович</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="w-full max-w-[1440px] mx-auto px-4 py-12 font-sans antialiased select-none">
+  <div class="w-full bg-gradient-to-r from-[#00b0d3] to-[#006cae] rounded-2xl p-6 sm:p-10 lg:p-12 text-white shadow-md">
+    
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+        Записаться на приём
+      </h2>
+      <p class="text-white/90 text-sm sm:text-base lg:max-w-[320px] lg:text-right leading-relaxed">
+        Оставьте заявку и мы свяжемся с вами в ближайшее время
+      </p>
+    </div>
+
+    <form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-start">
+      
+      <div class="grid grid-cols-1 gap-4 w-full">
+        <div class="relative bg-white rounded-lg h-14 flex items-center px-4 shadow-sm">
+          <select class="w-full bg-transparent text-[#1a1a1a] text-sm font-medium outline-none appearance-none cursor-pointer pr-8">
+            <option value="">Выберете направление</option>
+          </select>
+          <div class="absolute right-4 pointer-events-none">
+            <img src="./images_abdullo/Chevron Down.png" alt="" class="w-3 h-3 object-contain opacity-70" />
+          </div>
+        </div>
+
+        <div class="relative bg-white rounded-lg h-14 flex items-center px-4 shadow-sm">
+          <select class="w-full bg-transparent text-[#1a1a1a] text-sm font-medium outline-none appearance-none cursor-pointer pr-8">
+            <option value="">Выберете врача</option>
+          </select>
+          <div class="absolute right-4 pointer-events-none">
+            <img src="./images_abdullo/Chevron Down.png" alt="" class="w-3 h-3 object-contain opacity-70" />
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 w-full">
+        <div class="bg-white rounded-lg h-14 flex items-center px-4 shadow-sm">
+          <input type="text" placeholder="Ваше имя" class="w-full bg-transparent text-[#1a1a1a] text-sm font-medium outline-none placeholder:text-gray-400" />
+        </div>
+
+        <div class="bg-white rounded-lg h-14 flex items-center px-4 shadow-sm">
+          <input type="tel" placeholder="Ваш телефон" class="w-full bg-transparent text-[#1a1a1a] text-sm font-medium outline-none placeholder:text-gray-400" />
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 w-full">
+        <button type="submit" class="w-full h-14 bg-[#00c5c3] hover:bg-[#00a3a1] active:bg-[#008f8d] text-white font-bold text-base rounded-lg transition-colors shadow-sm flex items-center justify-center">
+          Оставить заявку
+        </button>
+
+        <label class="flex items-start gap-3 cursor-pointer group select-none">
+          <div class="relative flex items-center mt-0.5">
+            <input type="checkbox" class="peer sr-only" checked />
+            <div class="w-4 h-4 border border-white bg-transparent rounded flex items-center justify-center peer-checked:bg-white transition-all">
+              <img src="./images_abdullo/Chevron Down.png" alt="" class="w-2.5 h-2.5 object-contain hidden peer-checked:block invert peer-checked:invert-0" />
+            </div>
+          </div>
+          <span class="text-xs text-white/80 leading-normal">
+            Отправляя заявку, вы соглашаетесь на нашу 
+            <a href="#" class="underline hover:text-white transition-colors">политику конфиденциальности</a>
+          </span>
+        </label>
+      </div>
+
+    </form>
+
+  </div>
+</section>
+
+<section class="w-full max-w-[1440px] mx-auto px-4 py-12 font-sans antialiased select-none">
+  
+  <div class="flex items-center justify-between mb-8">
+    <h2 class="text-[#1a1a1a] text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight">
+      Популярные услуги в Косметологии
+    </h2>
+    <div class="flex items-center gap-2 flex-shrink-0 ml-4">
+      <button class="w-10 h-10 rounded-full bg-[#eef5fa] hover:bg-[#deebf5] flex items-center justify-center transition-colors focus:outline-none">
+        <img src="./images_abdullo/svg.png" alt="" class="w-4 h-4 object-contain" />
+      </button>
+      <button class="w-10 h-10 rounded-full bg-[#0070ba] hover:bg-[#005a96] flex items-center justify-center transition-colors focus:outline-none">
+        <img src="./images_abdullo/svg (1).png" alt="" class="w-4 h-4 object-contain" />
+      </button>
+    </div>
+  </div>
+
+  <div class="w-full overflow-x-auto pb-4 scrollbar-none snap-x snap-mandatory flex lg:grid lg:grid-cols-4 gap-6">
+    
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col bg-[#f4f7f9] rounded-xl p-4">
+      <div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-white mb-4">
+        <img src="./images_abdullo/image copy.png" alt="" class="w-full h-full object-cover" />
+      </div>
+      <div class="flex flex-col flex-grow justify-between">
+        <h3 class="text-[#1a1a1a] text-base font-bold leading-snug mb-6 min-h-[44px]">
+          Магнитно-резонансная томография (МРТ)
+        </h3>
+        <button class="w-full h-11 bg-[#005a8c] hover:bg-[#00466d] text-white font-semibold text-sm rounded transition-colors">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col bg-[#f4f7f9] rounded-xl p-4">
+      <div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-white mb-4">
+        <img src="./images_abdullo/image (1).png" alt="" class="w-full h-full object-cover" />
+      </div>
+      <div class="flex flex-col flex-grow justify-between">
+        <h3 class="text-[#1a1a1a] text-base font-bold leading-snug mb-6 min-h-[44px]">
+          Гастроскопия
+        </h3>
+        <button class="w-full h-11 bg-[#005a8c] hover:bg-[#00466d] text-white font-semibold text-sm rounded transition-colors">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col bg-[#f4f7f9] rounded-xl p-4">
+      <div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-white mb-4">
+        <img src="./images_abdullo/image (2).png" alt="" class="w-full h-full object-cover" />
+      </div>
+      <div class="flex flex-col flex-grow justify-between">
+        <h3 class="text-[#1a1a1a] text-base font-bold leading-snug mb-6 min-h-[44px]">
+          Прием гинеколога
+        </h3>
+        <button class="w-full h-11 bg-[#005a8c] hover:bg-[#00466d] text-white font-semibold text-sm rounded transition-colors">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col bg-[#f4f7f9] rounded-xl p-4">
+      <div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-white mb-4">
+        <img src="./images_abdullo/image (3).png" alt="" class="w-full h-full object-cover" />
+      </div>
+      <div class="flex flex-col flex-grow justify-between">
+        <h3 class="text-[#1a1a1a] text-base font-bold leading-snug mb-6 min-h-[44px]">
+          Лабораторная диагностика
+        </h3>
+        <button class="w-full h-11 bg-[#005a8c] hover:bg-[#00466d] text-white font-semibold text-sm rounded transition-colors">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="w-full max-w-[1440px] mx-auto px-4 py-12 font-sans antialiased select-none">
+  
+  <div class="flex items-center justify-between mb-8">
+    <h2 class="text-[#1a1a1a] text-3xl sm:text-4xl font-bold tracking-tight">Лицензии и сертификаты</h2>
+    <div class="flex items-center gap-2">
+      <button class="w-10 h-10 rounded-full bg-[#eef5fa] hover:bg-[#deebf5] flex items-center justify-center transition-colors focus:outline-none">
+        <img src="./images_abdullo/svg.png" alt="" class="w-4 h-4 object-contain" />
+      </button>
+      <button class="w-10 h-10 rounded-full bg-[#0070ba] hover:bg-[#005a96] flex items-center justify-center transition-colors focus:outline-none">
+        <img src="./images_abdullo/svg (1).png" alt="" class="w-4 h-4 object-contain" />
+      </button>
+    </div>
+  </div>
+
+  <div class="w-full overflow-x-auto pb-4 scrollbar-none snap-x snap-mandatory flex lg:grid lg:grid-cols-4 gap-6">
+    
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col items-center flex-shrink-0 group hidden lg:block">
+      <div class="relative w-full aspect-[1/1.4] bg-white border border-gray-200 rounded-lg shadow-inner overflow-hidden cursor-pointer hidden lg:block">
+        <img src="./images_abdullo/image (4).png" alt="" class="w-full h-full object-cover p-3" />
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-lg">
+        </div>
+      </div>
+      <p class="text-[#1a1a1a] text-sm mt-4 text-center leading-relaxed">
+        Сертификат ГОСТ Р ISO 9001-2015
+      </p>
+    </div>
+
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col items-center flex-shrink-0">
+      <div class="w-full aspect-[1/1.4] bg-white border border-gray-200 rounded-lg shadow-inner overflow-hidden cursor-pointer">
+        <img src="./images_abdullo/image (5).png" alt="" class="w-full h-full object-cover p-3" />
+      </div>
+      <p class="text-[#0070ba] hover:underline text-sm mt-4 text-center leading-relaxed cursor-pointer">
+        Лицензия Л041-01162-5000369739 (выписка из реестра)
+      </p>
+    </div>
+
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col items-center flex-shrink-0">
+      <div class="w-full aspect-[1/1.4] bg-white border border-gray-200 rounded-lg shadow-inner overflow-hidden cursor-pointer">
+        <img src="./images_abdullo/image (5).png" alt="" class="w-full h-full object-cover p-3" />
+      </div>
+      <p class=" hover:underline text-sm mt-4 text-center leading-relaxed cursor-pointer">
+        Лицензия Л017-01162-50/00561579 (выписка из реестра)
+      </p>
+    </div>
+
+    <div class="min-w-[280px] sm:min-w-[320px] lg:min-w-0 snap-start flex flex-col items-center flex-shrink-0">
+      <div class="w-full aspect-[1/1.4] bg-white border border-gray-200 rounded-lg shadow-inner overflow-hidden cursor-pointer">
+        <img src="./images_abdullo/image (5).png" alt="" class="w-full h-full object-cover p-3" />
+      </div>
+      <p class=" hover:underline text-sm mt-4 text-center leading-relaxed cursor-pointer">
+        Лицензия Л041-01162-50/00338967 (выписка из реестра)
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="w-full max-w-[1440px] mx-auto px-4 py-12 font-sans antialiased select-none">
+  
+  <div class="mb-6">
+    <h2 class="text-[#1a1a1a] text-3xl sm:text-4xl font-bold tracking-tight">
+      Как нас найти
+    </h2>
+  </div>
+
+  <div class="relative w-full aspect-[16/9] md:aspect-[21/9] lg:h-[450px] rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-[#f5f5f5]">
+    
+    <img src="./images_abdullo/map.png" alt="" class="w-full h-full object-cover" />
+
+
+  </div>
+
+</section>
+<section class="w-full max-w-[1440px] mx-auto px-4 py-12 font-sans antialiased select-none">
+  <div class="w-full bg-gradient-to-r from-[#00b0d3] to-[#006cae] rounded-2xl p-6 sm:p-10 lg:p-12 text-white shadow-md">
+    
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+        Записаться на приём
+      </h2>
+      <p class="text-white/90 text-sm sm:text-base lg:max-w-[320px] lg:text-right leading-relaxed">
+        Оставьте заявку и мы свяжемся с вами в ближайшее время
+      </p>
+    </div>
+
+    <form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-start">
+      
+      <div class="grid grid-cols-1 gap-4 w-full">
+        <div class="relative bg-white rounded-lg h-14 flex items-center px-4 shadow-sm">
+          <select class="w-full bg-transparent text-[#1a1a1a] text-sm font-medium outline-none appearance-none cursor-pointer pr-8">
+            <option value="">Выберете направление</option>
+          </select>
+          <div class="absolute right-4 pointer-events-none">
+            <img src="./images_abdullo/Chevron Down.png" alt="" class="w-3 h-3 object-contain opacity-70" />
+          </div>
+        </div>
+
+        <div class="relative bg-white rounded-lg h-14 flex items-center px-4 shadow-sm">
+          <select class="w-full bg-transparent text-[#1a1a1a] text-sm font-medium outline-none appearance-none cursor-pointer pr-8">
+            <option value="">Выберете врача</option>
+          </select>
+          <div class="absolute right-4 pointer-events-none">
+            <img src="./images_abdullo/Chevron Down.png" alt="" class="w-3 h-3 object-contain opacity-70" />
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 w-full">
+        <div class="bg-white rounded-lg h-14 flex items-center px-4 shadow-sm">
+          <input type="text" placeholder="Ваше имя" class="w-full bg-transparent text-[#1a1a1a] text-sm font-medium outline-none placeholder:text-gray-400" />
+        </div>
+
+        <div class="bg-white rounded-lg h-14 flex items-center px-4 shadow-sm">
+          <input type="tel" placeholder="Ваш телефон" class="w-full bg-transparent text-[#1a1a1a] text-sm font-medium outline-none placeholder:text-gray-400" />
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 w-full">
+        <button type="submit" class="w-full h-14 bg-[#00c5c3] hover:bg-[#00a3a1] active:bg-[#008f8d] text-white font-bold text-base rounded-lg transition-colors shadow-sm flex items-center justify-center">
+          Оставить заявку
+        </button>
+
+        <label class="flex items-start gap-3 cursor-pointer group select-none">
+          <div class="relative flex items-center mt-0.5">
+            <input type="checkbox" class="peer sr-only" checked />
+            <div class="w-4 h-4 border border-white bg-transparent rounded flex items-center justify-center peer-checked:bg-white transition-all">
+              <img src="./images_abdullo/Chevron Down.png" alt="" class="w-2.5 h-2.5 object-contain hidden peer-checked:block invert peer-checked:invert-0" />
+            </div>
+          </div>
+          <span class="text-xs text-white/80 leading-normal">
+            Отправляя заявку, вы соглашаетесь на нашу 
+            <a href="#" class="underline hover:text-white transition-colors">политику конфиденциальности</a>
+          </span>
+        </label>
+      </div>
+
+    </form>
+
+  </div>
+</section>
+
+<footer class="w-full bg-[#f4f7f9] pt-12 pb-6 px-4 font-sans antialiased select-none text-[#1a1a1a]">
+  <div class="max-w-[1440px] mx-auto">
+    
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 pb-8 border-b border-gray-200">
+      
+      <div class="flex flex-col max-w-[280px]">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="./images_abdullo/heart.png" alt="" class="w-14 h-14 object-contain" />
+          <div class="flex flex-col">
+            <span class="text-2xl font-black tracking-tight text-[#1e558c]">ГМЦ</span>
+            <span class="text-[10px] text-[#555555] uppercase tracking-wider font-medium leading-none">городской медицинский центр</span>
+          </div>
+        </div>
+        <p class="text-xs text-[#777777] leading-relaxed">
+          © 2011-2023 Городской Медицинский Центр. Все права защищены.
+        </p>
+      </div>
+
+      <div class="hidden lg:flex items-center xl:gap-8 lg:gap-4 text-sm font-semibold text-[#333333]">
+        <a href="#" class="hover:text-[#0070ba] transition-colors">Направления</a>
+        <a href="#" class="hover:text-[#0070ba] transition-colors">Услуги</a>
+        <a href="#" class="hover:text-[#0070ba] transition-colors">Врачи</a>
+        <a href="#" class="hover:text-[#0070ba] transition-colors">Отзывы</a>
+        <a href="#" class="hover:text-[#0070ba] transition-colors">Акции</a>
+        <div class="relative group cursor-pointer flex items-center gap-1 hover:text-[#0070ba] transition-colors">
+          <span>О центре</span>
+          <span class="text-[10px]">▼</span>
+        </div>
+        <a href="#" class="hover:text-[#0070ba] transition-colors">Детство</a>
+        <a href="#" class="hover:text-[#0070ba] transition-colors">Контакты</a>
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-8 items-start">
+      
+      <div class="flex flex-col gap-2">
+        <a  class="text-2xl sm:text-3xl font-bold text-[#0070ba] transition-colors tracking-tight">
+          8 (495) 926-06-03
+        </a>
+        <a  class="text-2xl sm:text-3xl font-bold text-[#0070ba] transition-colors tracking-tight">
+          8 (495) 588-08-80
+        </a>
+      </div>
+
+      <div class="flex flex-col gap-1 text-sm text-[#444444] pt-1">
+        <p class="font-medium text-base text-[#1a1a1a] mb-1">г. Мытищи, ул. Рождественская, д.7</p>
+        <p>Ежедневно <span class="font-semibold text-[#1a1a1a]">с 9.00 до 21.00</span></p>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <a href="#" class="flex items-center gap-3 text-sm text-[#444444] hover:text-[#25d366] transition-colors">
+          <img src="./images_abdullo/social.png" alt="" class="w-6 h-6 object-contain" />
+          <span>Написать в Whatsapp</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 text-sm text-[#444444] hover:text-[#0077ff] transition-colors">
+          <img src="./images_abdullo/social (1).png" alt="" class="w-6 h-6 object-contain" />
+          <span>Вконтакте</span>
+        </a>
+      </div>
+
+      <div class="flex flex-col items-start lg:items-end gap-4">
+        <button class="h-11 px-6 bg-[#eef5fa] hover:bg-[#deebf5] text-[#1e558c] font-semibold text-sm rounded transition-colors focus:outline-none">
+          Заказать обратный звонок
+        </button>
+        <a href="" class="text-sm font-medium text-[#444444] hover:text-[#0070ba] underline transition-colors">
+          info@gomedcentre.ru
+        </a>
+        <div class="flex items-center gap-2 text-sm text-[#555555] cursor-pointer hover:text-[#1a1a1a]">
+          <img src="./images_abdullo/icon.png" alt="" class="w-5 h-5 object-contain" />
+          <span>Версия для слабовидящих</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pt-6 border-t border-gray-200/60 flex flex-col gap-4 text-[11px] text-[#888888] leading-relaxed">
+      <a href="#" class="text-xs text-[#555555] hover:text-[#0070ba] underline transition-colors mb-2 inline-block">
+        Политика конфиденциальности
+      </a>
+      <p>
+        Информация о ценах носит уведомительный характер и не является публичной офертой. Действующий прейскурант, заверенный печатью и подписью руководителя, находится на информационных стендах Центра. Деятельность ООО «ГМЦ» осуществляется на основании действующей лицензии, выданной Департаментом здравоохранения города Москвы.
+      </p>
+      <p class="font-bold text-xs uppercase tracking-wider text-[#666666] mt-1">
+        Имеются противопоказания. Необходимо проконсультироваться со специалистом
+      </p>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
