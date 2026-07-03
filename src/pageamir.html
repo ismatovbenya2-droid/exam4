@@ -878,5 +878,79 @@
 
     </div>
 </section>
+
+<section class="py-12 md:py-20 bg-white">
+    <div class="max-w-[1200px] mx-auto px-4">
+
+        <div class="bg-gradient-to-r from-[#00a4cb] via-[#0082b2] to-[#005f9e] rounded-2xl p-6 sm:p-10 lg:p-12 text-white shadow-lg">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-x-8 lg:gap-y-6 items-end">
+                
+                <div class="lg:col-span-2">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
+                        Записаться на приём
+                    </h2>
+                </div>
+                
+                <div class="lg:col-span-1">
+                    <p class="text-sm sm:text-base text-white/95 font-light leading-tight max-w-md lg:max-w-none">
+                        Оставьте заявку и мы свяжемся с вами в ближайшее время
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-4 w-full">
+             
+                    <div class="relative w-full">
+                        <select class="w-full h-14 bg-white text-gray-900 px-5 rounded-lg appearance-none font-normal text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cyan-300 transition-all cursor-pointer" aria-label="Выберите направление">
+                            <option value="" disabled selected hidden>Выберете направление</option>
+                            <option value="1">Терапия</option>
+                            <option value="2">Неврология</option>
+                            <option value="3">Урология</option>
+                        </select>
+                        <div class="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-800">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="relative w-full">
+                        <select class="w-full h-14 bg-white text-gray-900 px-5 rounded-lg appearance-none font-normal text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cyan-300 transition-all cursor-pointer" aria-label="Выберите врача">
+                            <option value="" disabled selected hidden>Выберете врача</option>
+                            <option value="1">Крятов Андрей Михайлович</option>
+                            <option value="2">Савина Наталья Владимировна</option>
+                            <option value="3">Зотова Гюзяль</option>
+                            <option value="4">Николаева Оксана</option>
+                        </select>
+                        <div class="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-800">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4 w-full">
+                    <input type="text" placeholder="Ваше имя" class="w-full h-14 bg-white text-gray-900 px-5 rounded-lg font-normal text-sm sm:text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-300 transition-all" />
+                    <input type="tel" placeholder="Ваш телефон" class="w-full h-14 bg-white text-gray-900 px-5 rounded-lg font-normal text-sm sm:text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-300 transition-all" />
+                </div>
+
+                <div class="flex flex-col gap-4 w-full">
+                    <button type="submit" class="w-full h-14 bg-[#00ccbe] hover:bg-[#00bdae] text-white font-medium text-sm sm:text-base rounded-lg shadow-sm transition-colors duration-200">
+                        Оставить заявку
+                    </button>
+                    
+                    <label class="flex items-start gap-3 cursor-pointer select-none">
+                        <input type="checkbox" class="w-4 h-4 rounded border-white text-[#00ccbe] focus:ring-0 focus:ring-offset-0 bg-transparent mt-0.5 shrink-0 accent-[#00ccbe]" />
+                        <span class="text-[11px] sm:text-xs text-white/90 font-light leading-snug">
+                            Отправляя заявку, вы соглашаетесь на нашу <a href="#" class="underline hover:text-white transition-colors">политику конфиденциальности</a>
+                        </span>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
